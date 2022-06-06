@@ -25,7 +25,7 @@
             $this -> IpBaseDeDatos = "127.0.0.1";
             $this -> UsuarioBaseDeDatos = "root";
             $this -> PasswordBaseDeDatos = "";
-            $this -> NombreBaseDeDatos = "ejemploCapas";
+            $this -> NombreBaseDeDatos = "pruebita";
             $this -> PuertoBaseDeDatos = "3306";
         }
     }

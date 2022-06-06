@@ -1,15 +1,22 @@
 <?php 
-    require "modelos/PersonaModelo.php";
+    require $_SERVER['DOCUMENT_ROOT'] ."/controladores/PersonaControlador.class.php";
 
+ 
+   
 
-    $p = new PersonaModelo();
+    //PersonaControlador::Alta($nombre,$apellido,$telefono);
+    //PersonaControlador::Modificar($id,$nombre,$apellido,$telefono);
+    //PersonaControlador::Eliminar($id);
 
-    $p -> id = 1;
-    $p -> nombre = "Juan";
-    $p -> apellido = "Perez";
-    $p -> telefono = "12345";
+    
+    foreach(PersonaControlador::Listar() as $p){
+        echo "ID: " . $p['id'] . " <br />";
+        echo "Nombre: " . $p['nombre'] . " <br />";
+        echo "Apellido: " . $p['apellido'] . " <br />";
+        echo "Telefono: " . $p['telefono'] . " <br />";
+        echo "<br /><br />";
+    }
 
-    $p -> Guardar();
-
+   
     
     

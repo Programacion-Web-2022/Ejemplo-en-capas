@@ -1,5 +1,7 @@
 <?php
 
+    require $_SERVER['DOCUMENT_ROOT'] . "/config.php";
+
     class Modelo {
         public $IpBaseDeDatos;
         public $NombreBaseDeDatos;
@@ -22,10 +24,10 @@
         }
 
         public function incializarDatosDeConexion(){
-            $this -> IpBaseDeDatos = "127.0.0.1";
-            $this -> UsuarioBaseDeDatos = "root";
-            $this -> PasswordBaseDeDatos = "";
-            $this -> NombreBaseDeDatos = "pruebita";
-            $this -> PuertoBaseDeDatos = "3306";
+            $this -> IpBaseDeDatos = IP_DB;
+            $this -> UsuarioBaseDeDatos = USER_DB;
+            $this -> PasswordBaseDeDatos = PASS_DB;
+            $this -> NombreBaseDeDatos = NAME_DB;
+            $this -> PuertoBaseDeDatos = PORT_DB;
         }
     }

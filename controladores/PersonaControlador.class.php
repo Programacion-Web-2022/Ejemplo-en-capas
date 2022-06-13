@@ -1,5 +1,5 @@
 <?php 
-    require $_SERVER['DOCUMENT_ROOT'] ."/modelos/PersonaModelo.class.php";
+    require $_SERVER['DOCUMENT_ROOT'] ."/utils/autoload.php";
 
     class PersonaControlador{
         public static function Alta($nombre,$apellido,$telefono){

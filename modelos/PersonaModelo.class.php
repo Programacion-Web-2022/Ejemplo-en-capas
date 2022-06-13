@@ -1,5 +1,5 @@
 <?php 
-    require $_SERVER['DOCUMENT_ROOT'] . "/modelos/Modelo.class.php";
+    require $_SERVER['DOCUMENT_ROOT'] ."/utils/autoload.php";
 
     class PersonaModelo extends Modelo {
         public $id;

@@ -1,3 +1,8 @@
+<?php 
+    require $_SERVER['DOCUMENT_ROOT'] ."/utils/autoload.php";
+    if(isset($_SESSION['autenticado']))
+        header("Location: /index.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
